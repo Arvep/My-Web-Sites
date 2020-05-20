@@ -1,0 +1,37 @@
+body {
+    background: #333;
+    color: white;
+}
+
+header {
+    background: white;
+    color: #333;
+    width: 100px;
+    /*Margins can be top, left, right, down
+    margin-top: 100px;
+    margin-left: 25px;*/
+
+    /*Margins automatic top right bottom left*/
+    margin: 10px 20px 100px 40px;
+    padding:30px;
+
+    /*Borders : we need color, width and style to be correct*/
+    border-color: yellow;
+    border-width: 13px;
+    border-style: solid;
+
+}
+main{
+    background: white;
+    color: #333;
+    width:200px;
+    /*try to avoid setting the height
+    text can be out if it's set too small
+    height: 300px;*/
+
+    margin-top: 25px;
+    margin-left: 25px;
+    padding: 20px;
+
+    border: solid pink 20px;
+}

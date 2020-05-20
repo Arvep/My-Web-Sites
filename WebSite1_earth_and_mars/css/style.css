@@ -1,0 +1,18 @@
+body{
+    background-color: #333;
+    color: #f4f4f4;
+}
+a{
+    color:darksalmon
+}
+/*-class with dot at beginning--*/
+.intro {
+    font-size: 24px;
+}
+/*-id with # at beginning--*/
+#earth-title{
+    color:lightgreen;
+}
+#mars-title{
+    color: lightsalmon;
+}

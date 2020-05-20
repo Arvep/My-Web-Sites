@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--React libraries-->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+        //class app because it controls id app
+        class App extends React.Component{
+            //state of component
+            state={
+                name:'Ryu',
+                age:30
+            }
+            //function handleClick receives a event
+            //we can not reference this. in the functions
+            //without the functionName=() =>{}
+            handleClick=(e)=>{
+               // console.log(e.target)
+              //do not do this this.state.name="Josh"
+              //use the setState
+               this.setState({
+                   name: 'Yoshi',
+                   age: 25
+               });
+               console.log(this.state);
+            }
+
+            handleMouseOver=(e)=>{
+                console.log(e.target,e.pageX)
+            }
+
+            handleCopy=(e)=>{
+                console.log('Try being original for once!')
+            }
+
+            //renders and return 
+            render(){
+                return(
+                // we always should return one div that packages all
+                //we use className intead of class for CSS
+                //the brackets indicates JS (a dynamic content)
+                <div className="app-content">
+                    <h1>Hey,ninjas</h1>  
+                    <p>{Math.random()*10}</p> 
+                    <p>My name is: {this.state.name}
+                        and I am {this.state.age}</p> 
+                    <button onClick={this.handleClick}>Click me</button>
+                    <button onMouseOver={this.handleMouseOver}>Hover me</button>
+                    <p onCopy={this.handleCopy}>What we think, we become</p>
+                </div>
+                )
+            }
+        }
+
+        //we return to the page class app, to id app
+        ReactDOM.render(<App/>,document.getElementById('app'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body{
+    /*we take out default margin*/
+    margin: 0; 
+}
+
+header{
+    background-color: darkblue;
+    color: lightgoldenrodyellow;
+    text-align: center;
+    /*padding-top: 25px;
+    padding-bottom: 25px;*/
+    padding: 25px 0;
+    /*margin-bottom: 25px;
+    margin: 0 0 25px 0;*/
+    margin-left:auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+main{
+    background-color: lightsteelblue;
+    width: 600px;
+    padding: 25px;
+    border: solid red 5px;
+    /*margin-left:auto;
+    margin-right: auto;*/
+    margin:100px auto;
+}
+
+footer{
+    background-color: darkblue;
+    color: lightseagreen;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 25px;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+    }
